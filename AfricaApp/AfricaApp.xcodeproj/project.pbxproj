@@ -21,6 +21,10 @@
 		4D42831629DDC92C0033C4BF /* hippo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D42830C29DDC92C0033C4BF /* hippo.mp4 */; };
 		4D42831729DDC92C0033C4BF /* elephant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D42830D29DDC92C0033C4BF /* elephant.mp4 */; };
 		4D42831829DDC92C0033C4BF /* lioness.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D42830E29DDC92C0033C4BF /* lioness.mp4 */; };
+		4D42831E29DDD74D0033C4BF /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D42831A29DDD74C0033C4BF /* locations.json */; };
+		4D42831F29DDD74D0033C4BF /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D42831B29DDD74C0033C4BF /* covers.json */; };
+		4D42832029DDD74D0033C4BF /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D42831C29DDD74D0033C4BF /* videos.json */; };
+		4D42832129DDD74D0033C4BF /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D42831D29DDD74D0033C4BF /* animals.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,11 @@
 		4D42830C29DDC92C0033C4BF /* hippo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hippo.mp4; sourceTree = "<group>"; };
 		4D42830D29DDC92C0033C4BF /* elephant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = elephant.mp4; sourceTree = "<group>"; };
 		4D42830E29DDC92C0033C4BF /* lioness.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lioness.mp4; sourceTree = "<group>"; };
+		4D42831A29DDD74C0033C4BF /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		4D42831B29DDD74C0033C4BF /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
+		4D42831C29DDD74D0033C4BF /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		4D42831D29DDD74D0033C4BF /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		4D42832229DDD83F0033C4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,8 @@
 		4D4282EA29DDB5690033C4BF /* AfricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D42832229DDD83F0033C4BF /* Info.plist */,
+				4D42831929DDD73E0033C4BF /* Data */,
 				4D4282FA29DDC8EA0033C4BF /* Videos */,
 				4D4282EB29DDB5690033C4BF /* AfricaAppApp.swift */,
 				4D4282ED29DDB5690033C4BF /* ContentView.swift */,
@@ -105,6 +116,17 @@
 				4D42830A29DDC92B0033C4BF /* zebra.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		4D42831929DDD73E0033C4BF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D42831D29DDD74D0033C4BF /* animals.json */,
+				4D42831B29DDD74C0033C4BF /* covers.json */,
+				4D42831A29DDD74C0033C4BF /* locations.json */,
+				4D42831C29DDD74D0033C4BF /* videos.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +187,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D42831E29DDD74D0033C4BF /* locations.json in Resources */,
 				4D42831629DDC92C0033C4BF /* hippo.mp4 in Resources */,
+				4D42832029DDD74D0033C4BF /* videos.json in Resources */,
 				4D42830F29DDC92C0033C4BF /* rhino.mp4 in Resources */,
 				4D4282F329DDB56A0033C4BF /* Preview Assets.xcassets in Resources */,
 				4D42831229DDC92C0033C4BF /* cheetah.mp4 in Resources */,
 				4D42831529DDC92C0033C4BF /* ostrich.mp4 in Resources */,
 				4D42831329DDC92C0033C4BF /* gorilla.mp4 in Resources */,
+				4D42831F29DDD74D0033C4BF /* covers.json in Resources */,
+				4D42832129DDD74D0033C4BF /* animals.json in Resources */,
 				4D42831429DDC92C0033C4BF /* zebra.mp4 in Resources */,
 				4D42831029DDC92C0033C4BF /* giraffe.mp4 in Resources */,
 				4D42831129DDC92C0033C4BF /* lion.mp4 in Resources */,
@@ -245,6 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -299,6 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -322,7 +350,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AfricaApp/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -330,8 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mobilesoftwareservices.AfricaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,7 +385,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AfricaApp/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -357,8 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mobilesoftwareservices.AfricaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
