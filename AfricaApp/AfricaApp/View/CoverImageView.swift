@@ -12,7 +12,14 @@ struct CoverImageView: View {
     
     // MARK: Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                Image("cover-lion")
+                    .resizable()
+                .scaledToFit()
+            } //: Loop
+        } //: Tab
+        .tabViewStyle(.page)
     }
 }
 
