@@ -13,7 +13,7 @@ struct InsetGalleryView: View {
     
     // MARK: Body
     var body: some View {
-        ScrollView {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(animal.gallery, id: \.self) { image in
                     Image(image)
@@ -24,7 +24,6 @@ struct InsetGalleryView: View {
                 }  //: End of ForEach
             } //: End of HStack
         } //: End of HStack
-        Text("")
     }  //: End of ScrollView
 }
 

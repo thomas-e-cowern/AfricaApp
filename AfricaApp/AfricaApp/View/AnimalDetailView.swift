@@ -41,7 +41,12 @@ struct AnimalDetailView: View {
                     .padding(.horizontal)
                 
                 // Gallery
-                
+                Group {
+
+                    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in pictures")
+                    
+                    InsetGalleryView(animal: animal)
+                }
                 // Facts
                 
                 // Description
@@ -50,7 +55,7 @@ struct AnimalDetailView: View {
                 
                 // Link
                 
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
             }
             .navigationTitle("Learn about \(animal.name)")
             .navigationBarTitleDisplayMode(.inline)
