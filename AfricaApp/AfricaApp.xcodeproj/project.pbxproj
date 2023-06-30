@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D3CF9022A4F0CA000337F04 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CF9012A4F0CA000337F04 /* CoverImageView.swift */; };
+		4D3CF9052A4F106700337F04 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CF9042A4F106700337F04 /* CoverImageModel.swift */; };
 		4D4282EC29DDB5690033C4BF /* AfricaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4282EB29DDB5690033C4BF /* AfricaAppApp.swift */; };
 		4D4282EE29DDB5690033C4BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4282ED29DDB5690033C4BF /* ContentView.swift */; };
 		4D4282F029DDB56A0033C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4282EF29DDB56A0033C4BF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		4D3CF9012A4F0CA000337F04 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		4D3CF9042A4F106700337F04 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		4D4282E829DDB5690033C4BF /* AfricaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfricaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4282EB29DDB5690033C4BF /* AfricaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaAppApp.swift; sourceTree = "<group>"; };
 		4D4282ED29DDB5690033C4BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4D3CF9032A4F103100337F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D3CF9042A4F106700337F04 /* CoverImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4D4282DF29DDB5690033C4BF = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		4D4282EA29DDB5690033C4BF /* AfricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D3CF9032A4F103100337F04 /* Model */,
 				4D3CF9002A4F0C8F00337F04 /* View */,
 				4D42832229DDD83F0033C4BF /* Info.plist */,
 				4D42831929DDD73E0033C4BF /* Data */,
@@ -247,6 +258,7 @@
 				4D4282EE29DDB5690033C4BF /* ContentView.swift in Sources */,
 				4D42832B29DDFCBC0033C4BF /* MainView.swift in Sources */,
 				4D3CF9022A4F0CA000337F04 /* CoverImageView.swift in Sources */,
+				4D3CF9052A4F106700337F04 /* CoverImageModel.swift in Sources */,
 				4D42832729DDFC7F0033C4BF /* MapView.swift in Sources */,
 				4D4282EC29DDB5690033C4BF /* AfricaAppApp.swift in Sources */,
 				4D42832529DDFC620033C4BF /* VideoListView.swift in Sources */,
