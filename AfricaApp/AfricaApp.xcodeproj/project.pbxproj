@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D3895672A56F96C002EBC3B /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3895662A56F96C002EBC3B /* InsetFactView.swift */; };
+		4D3895692A56FF6B002EBC3B /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3895682A56FF6B002EBC3B /* InsetMapView.swift */; };
 		4D3CF9022A4F0CA000337F04 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CF9012A4F0CA000337F04 /* CoverImageView.swift */; };
 		4D3CF9052A4F106700337F04 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CF9042A4F106700337F04 /* CoverImageModel.swift */; };
 		4D3CF9082A4F11C100337F04 /* CodbleBundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3CF9072A4F11C100337F04 /* CodbleBundle+Extension.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		4D3895662A56F96C002EBC3B /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		4D3895682A56FF6B002EBC3B /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		4D3CF9012A4F0CA000337F04 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		4D3CF9042A4F106700337F04 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		4D3CF9072A4F11C100337F04 /* CodbleBundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodbleBundle+Extension.swift"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				4D3CF90F2A4F348200337F04 /* HeadingView.swift */,
 				4D3CF9112A4F36D300337F04 /* InsetGalleryView.swift */,
 				4D3895662A56F96C002EBC3B /* InsetFactView.swift */,
+				4D3895682A56FF6B002EBC3B /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				4D3CF90E2A4F2FD500337F04 /* AnimalDetailView.swift in Sources */,
 				4D3CF90C2A4F199F00337F04 /* AnimalModel.swift in Sources */,
 				4D42832729DDFC7F0033C4BF /* MapView.swift in Sources */,
+				4D3895692A56FF6B002EBC3B /* InsetMapView.swift in Sources */,
 				4D4282EC29DDB5690033C4BF /* AfricaAppApp.swift in Sources */,
 				4D42832529DDFC620033C4BF /* VideoListView.swift in Sources */,
 				4D42832929DDFC9D0033C4BF /* GalleryView.swift in Sources */,
