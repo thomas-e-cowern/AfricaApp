@@ -18,8 +18,11 @@ struct VideoListView: View {
             List {
                 ForEach(videos) { item in
                     VideoListItemView(video: item)
+                        .padding(.vertical, 8)
                 }  //: End of ForEach
             } // MARK: End of list
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("Videos")
         } // MARK: End of Navigation
     }
 }
