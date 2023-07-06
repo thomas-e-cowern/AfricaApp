@@ -15,7 +15,9 @@ struct InsetFactView: View {
     var body: some View {
         GroupBox {
             TabView {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                ForEach(animal.fact, id: \.self) { item in
+                    Text(item)
+                }
             } // MARK: Tabs
             .tabViewStyle(PageTabViewStyle())
             .frame(minHeight: 148, idealHeight: 168, maxHeight: 180)
