@@ -23,6 +23,7 @@ struct VideoListView: View {
             } // MARK: End of list
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Videos")
+            .navigationBarTitleDisplayMode(.inline)
         } // MARK: End of Navigation
     }
 }
