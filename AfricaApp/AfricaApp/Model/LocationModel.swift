@@ -14,5 +14,10 @@ struct NationalParkLocation: Codable, Identifiable {
     var image: String
     var latitude: Double
     var longitude: Double
+    
+    // Location computed property
+    var location: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
 }
 
