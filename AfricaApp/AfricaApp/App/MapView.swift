@@ -18,9 +18,19 @@ struct MapView: View {
         return mapRegion
     }()
     
+    let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+    
     // MARK: - Body
     var body: some View {
-        Text("Map")
+        // MARK: Basic map
+        Map(coordinateRegion: $region)
+        
+        // MARK: Advanced map
+        Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
+            // Option A
+            MapMarker(coordinate: item.location, tint: .accentColor)
+            
+        })
     }
 }
 
