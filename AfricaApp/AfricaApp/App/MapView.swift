@@ -23,12 +23,18 @@ struct MapView: View {
     // MARK: - Body
     var body: some View {
         // MARK: Basic map
-        Map(coordinateRegion: $region)
+//        Map(coordinateRegion: $region)
         
         // MARK: Advanced map
         Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
             // Option A
-            MapMarker(coordinate: item.location, tint: .accentColor)
+//            MapMarker(coordinate: item.location, tint: .accentColor)
+            MapAnnotation(coordinate: item.location) {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 33, height: 33, alignment: .center)
+            }
             
         })
     }
