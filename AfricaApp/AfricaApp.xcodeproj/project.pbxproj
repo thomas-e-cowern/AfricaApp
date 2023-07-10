@@ -44,6 +44,7 @@
 		4D42832729DDFC7F0033C4BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42832629DDFC7F0033C4BF /* MapView.swift */; };
 		4D42832929DDFC9D0033C4BF /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42832829DDFC9D0033C4BF /* GalleryView.swift */; };
 		4D42832B29DDFCBC0033C4BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42832A29DDFCBC0033C4BF /* MainView.swift */; };
+		4DCCC3902A5C639300FEC853 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCC38F2A5C639300FEC853 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		4D42832629DDFC7F0033C4BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4D42832829DDFC9D0033C4BF /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		4D42832A29DDFCBC0033C4BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4DCCC38F2A5C639300FEC853 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				4D3CF9042A4F106700337F04 /* CoverImageModel.swift */,
 				4D3CF90B2A4F199F00337F04 /* AnimalModel.swift */,
 				4D38956C2A570D5F002EBC3B /* VideoModel.swift */,
+				4DCCC38F2A5C639300FEC853 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				4D42832529DDFC620033C4BF /* VideoListView.swift in Sources */,
 				4D38956D2A570D5F002EBC3B /* VideoModel.swift in Sources */,
 				4D42832929DDFC9D0033C4BF /* GalleryView.swift in Sources */,
+				4DCCC3902A5C639300FEC853 /* LocationModel.swift in Sources */,
 				4D3CF9122A4F36D300337F04 /* InsetGalleryView.swift in Sources */,
 				4D38956F2A570DC4002EBC3B /* VideoListItemView.swift in Sources */,
 				4D3CF9082A4F11C100337F04 /* CodbleBundle+Extension.swift in Sources */,
