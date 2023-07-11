@@ -13,8 +13,30 @@ struct ContentView: View {
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var isGridViewActive: Bool = false
+    @State private var gridColumn: Int = 1
+    @State private var toolbarIcon: String = "square.grid.2x2"
     
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    // MARK: Functions
+    func gridSwitch() {
+        print("Grid Switched")
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+        gridColumn = gridLayout.count
+        print("Grid Number: \(gridColumn)")
+        
+        // toolbar image
+        switch gridColumn {
+        case 1:
+            toolbarIcon = "square.grid.2x2"
+        case 2:
+            toolbarIcon = "square.grid.3x3"
+        case 3:
+            toolbarIcon = "rectangle.grid.1x2"
+        default:
+            toolbarIcon = "square.grid.2x2"
+        }
+    }
+    
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
     
     // MARK: Body
     var body: some View {
@@ -64,8 +86,9 @@ struct ContentView: View {
                             print("Gridview is activated")
                             isGridViewActive = true
                             haptics.impactOccurred()
+                            gridSwitch()
                         } label: {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolbarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
