@@ -9,6 +9,9 @@ import SwiftUI
 
 struct GalleryView: View {
     // MARK: - Properties
+    
+    @State private var selectedAnimal: String = "lion"
+    
     let animals: [Animal] = Bundle.main.decode("animals.json")
     
     // Simple grid definition
@@ -25,16 +28,31 @@ struct GalleryView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             
+            // Selected image
+            Image(selectedAnimal)
+                .resizable()
+                .scaledToFit()
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 8))
+                
+            
             // Grid
-            LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                ForEach(animals) { item in
-                    Image(item.image)
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                } //: End of ForEach
-            } //: End of grid
+            VStack(alignment: .center, spacing: 30) {
+                LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                    ForEach(animals) { item in
+                        Image(item.image)
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                            .onTapGesture {
+                                selectedAnimal = item.image
+                            }
+                    } //: End of ForEach
+                } //: End of grid
+            } //: End of VStack
+            .padding(.horizontal, 10)
+            .padding(.vertical, 50)
         }  //: End of ScrollView
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())
