@@ -45,6 +45,7 @@
 		4D42832929DDFC9D0033C4BF /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42832829DDFC9D0033C4BF /* GalleryView.swift */; };
 		4D42832B29DDFCBC0033C4BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42832A29DDFCBC0033C4BF /* MainView.swift */; };
 		4D98E8812A5D819200A65848 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8802A5D819200A65848 /* MapAnnotationView.swift */; };
+		4D98E8832A5D88A600A65848 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8822A5D88A600A65848 /* MotionAnimationView.swift */; };
 		4DCCC3902A5C639300FEC853 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCC38F2A5C639300FEC853 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		4D42832829DDFC9D0033C4BF /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		4D42832A29DDFCBC0033C4BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4D98E8802A5D819200A65848 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		4D98E8822A5D88A600A65848 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		4DCCC38F2A5C639300FEC853 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				4D38956E2A570DC4002EBC3B /* VideoListItemView.swift */,
 				4D3895702A572325002EBC3B /* VideoPlayerView.swift */,
 				4D98E8802A5D819200A65848 /* MapAnnotationView.swift */,
+				4D98E8822A5D88A600A65848 /* MotionAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				4D3CF9122A4F36D300337F04 /* InsetGalleryView.swift in Sources */,
 				4D38956F2A570DC4002EBC3B /* VideoListItemView.swift in Sources */,
 				4D3CF9082A4F11C100337F04 /* CodbleBundle+Extension.swift in Sources */,
+				4D98E8832A5D88A600A65848 /* MotionAnimationView.swift in Sources */,
 				4D3CF9102A4F348200337F04 /* HeadingView.swift in Sources */,
 				4D3895712A572325002EBC3B /* VideoPlayerView.swift in Sources */,
 			);
