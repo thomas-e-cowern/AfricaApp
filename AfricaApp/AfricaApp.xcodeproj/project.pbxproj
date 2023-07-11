@@ -48,7 +48,7 @@
 		4D98E8832A5D88A600A65848 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8822A5D88A600A65848 /* MotionAnimationView.swift */; };
 		4D98E8852A5DA62600A65848 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8842A5DA62600A65848 /* AnimalGridItemView.swift */; };
 		4D98E88B2A5DB51F00A65848 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E88A2A5DB51F00A65848 /* Stickers.xcassets */; };
-		4D98E88F2A5DB51F00A65848 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D98E8882A5DB51D00A65848 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D98E88F2A5DB51F00A65848 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D98E8882A5DB51D00A65848 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4D98E8952A5DB9CA00A65848 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8942A5DB9CA00A65848 /* CreditsView.swift */; };
 		4D98E8982A5DBE3C00A65848 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8972A5DBE3C00A65848 /* CenterModifier.swift */; };
 		4DCCC3902A5C639300FEC853 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCC38F2A5C639300FEC853 /* LocationModel.swift */; };
@@ -440,6 +440,7 @@
 /* Begin PBXTargetDependency section */
 		4D98E88E2A5DB51F00A65848 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4D98E8872A5DB51D00A65848 /* Stickers */;
 			targetProxy = 4D98E88D2A5DB51F00A65848 /* PBXContainerItemProxy */;
 		};
@@ -586,8 +587,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mobilesoftwareservices.AfricaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -620,8 +621,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mobilesoftwareservices.AfricaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
