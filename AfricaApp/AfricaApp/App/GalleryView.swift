@@ -22,7 +22,15 @@ struct GalleryView: View {
     //]
     
     // Efficient grid definition
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    // let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    
+    // Dynamic grid layout
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Double = 3.0
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
+    }
     
     // MARK: - Body
     var body: some View {
@@ -35,6 +43,11 @@ struct GalleryView: View {
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 8))
                 
+            Slider(value: $gridColumn, in: 2...4, step: 1)
+                .padding(.horizontal)
+                .onChange(of: gridColumn) { newValue in
+                    gridSwitch()
+                }
             
             // Grid
             VStack(alignment: .center, spacing: 30) {
@@ -50,6 +63,9 @@ struct GalleryView: View {
                             }
                     } //: End of ForEach
                 } //: End of grid
+                .onAppear {
+                    gridSwitch()
+                }
             } //: End of VStack
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
