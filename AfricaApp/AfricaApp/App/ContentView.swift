@@ -53,9 +53,8 @@ struct ContentView: View {
                             } // MARK: End of Navigation
                         }  //: End of ForEach
                         HStack {
-                            Spacer()
                             CreditsView()
-                            Spacer()
+                                .modifier(CenterModifier())
                         }
                     } // MARK: End of list
                 } else {
