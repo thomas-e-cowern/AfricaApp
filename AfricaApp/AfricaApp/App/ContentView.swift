@@ -52,6 +52,11 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             } // MARK: End of Navigation
                         }  //: End of ForEach
+                        HStack {
+                            Spacer()
+                            CreditsView()
+                            Spacer()
+                        }
                     } // MARK: End of list
                 } else {
                     ScrollView(.vertical, showsIndicators: false    ) {
