@@ -9,5 +9,10 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>StickerBrowserViewController</string>
 	</dict>
+	<key>MSSupportedPresentationContexts</key>
+	<array>
+		<string>MSMessagesAppPresentationContext</string>
+		<string>MSMessagesAppPresentationContextMessages</string>
+	</array>
 </dict>
 </plist>
