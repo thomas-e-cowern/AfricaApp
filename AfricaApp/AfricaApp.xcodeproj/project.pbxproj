@@ -49,6 +49,7 @@
 		4D98E8852A5DA62600A65848 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8842A5DA62600A65848 /* AnimalGridItemView.swift */; };
 		4D98E88B2A5DB51F00A65848 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E88A2A5DB51F00A65848 /* Stickers.xcassets */; };
 		4D98E88F2A5DB51F00A65848 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4D98E8882A5DB51D00A65848 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D98E8952A5DB9CA00A65848 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E8942A5DB9CA00A65848 /* CreditsView.swift */; };
 		4DCCC3902A5C639300FEC853 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCC38F2A5C639300FEC853 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		4D98E8882A5DB51D00A65848 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D98E88A2A5DB51F00A65848 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		4D98E88C2A5DB51F00A65848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D98E8942A5DB9CA00A65848 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		4DCCC38F2A5C639300FEC853 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				4D98E8802A5D819200A65848 /* MapAnnotationView.swift */,
 				4D98E8822A5D88A600A65848 /* MotionAnimationView.swift */,
 				4D98E8842A5DA62600A65848 /* AnimalGridItemView.swift */,
+				4D98E8942A5DB9CA00A65848 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				4D98E8852A5DA62600A65848 /* AnimalGridItemView.swift in Sources */,
 				4D3CF9122A4F36D300337F04 /* InsetGalleryView.swift in Sources */,
 				4D38956F2A570DC4002EBC3B /* VideoListItemView.swift in Sources */,
+				4D98E8952A5DB9CA00A65848 /* CreditsView.swift in Sources */,
 				4D3CF9082A4F11C100337F04 /* CodbleBundle+Extension.swift in Sources */,
 				4D98E8832A5D88A600A65848 /* MotionAnimationView.swift in Sources */,
 				4D3CF9102A4F348200337F04 /* HeadingView.swift in Sources */,
