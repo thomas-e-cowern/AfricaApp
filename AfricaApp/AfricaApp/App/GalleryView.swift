@@ -13,6 +13,7 @@ struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let hapticImact = UIImpactFeedbackGenerator(style: .medium)
     
     // Simple grid definition
     //let gridLayout: [GridItem] = [
@@ -46,7 +47,9 @@ struct GalleryView: View {
             Slider(value: $gridColumn, in: 2...4, step: 1)
                 .padding(.horizontal)
                 .onChange(of: gridColumn) { newValue in
-                    gridSwitch()
+                    withAnimation(.easeIn) {
+                        gridSwitch()
+                    }
                 }
             
             // Grid
@@ -60,6 +63,7 @@ struct GalleryView: View {
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .onTapGesture {
                                 selectedAnimal = item.image
+                                hapticImact.impactOccurred()
                             }
                     } //: End of ForEach
                 } //: End of grid
